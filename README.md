@@ -36,14 +36,13 @@ Below the settings for the debug configuration is shown. Consider that the remot
 ![Debug Configuration Startup Tab](DbgCfg_Startup.jpg)
 
 If you want to use the hardware breakpoints of the VexRiscV you should use the following Commands in the Eclipse Startup Tab:
-<pre><code>  file Debug/First.elf
-  set serial baud 115200
-  target extended-remote \\\\.\\com6
-  monitor r
-  load Debug/First.elf
-  mem 0x10000 0x1ffff ro
-  mem 0x0000 0xffff rw
-</code></pre>
- 
+
+      file Debug/First.elf
+      set serial baud 115200
+      target extended-remote \\.\com6
+      monitor r
+      load Debug/First.elf
+      mem 0x10000 0x1ffff ro
+      mem 0x0000 0xffff rw
 
 **Have fun**
